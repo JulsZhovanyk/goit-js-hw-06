@@ -23,3 +23,8 @@ const imagesText = images
   .join("");
 
 const galleryImages = galleryList.insertAdjacentHTML("afterbegin", imagesText);
+
+galleryList.style.display = "flex";
+galleryList.style.alignItems = "center";
+galleryList.style.listStyle = "none";
+galleryList.style.flexDirection = "column";

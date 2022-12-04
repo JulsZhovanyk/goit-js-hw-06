@@ -16,5 +16,4 @@ const ingredientsEl = ingredients.map((ingredient) => {
   return element;
 });
 
-const productsEL = document.createElement("li");
 ingredientsList.append(...ingredientsEl);

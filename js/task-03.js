@@ -15,16 +15,15 @@ const images = [
 
 const galleryList = document.querySelector(".gallery");
 
-const imagesText = images
+const imagesTags = images
   .map(
     (image) =>
       `<li class="gallery__item"><img src="${image.url}" alt="${image.alt}" class="gallery__images" width=500></li>`
   )
   .join("");
 
-const galleryImages = galleryList.insertAdjacentHTML("afterbegin", imagesText);
-
-galleryList.style.display = "flex";
-galleryList.style.alignItems = "center";
-galleryList.style.listStyle = "none";
-galleryList.style.flexDirection = "column";
+galleryList.insertAdjacentHTML("afterbegin", imagesTags);
+galleryList.setAttribute(
+  "style",
+  "display:flex; align-items:center; flex-direction:column; list-style:none;"
+);

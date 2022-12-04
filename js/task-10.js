@@ -12,10 +12,10 @@ function createBoxes(amount) {
   const array = [];
 
   for (let i = 0; i < amount; i += 1) {
-    const newEL = `<div style="width: ${30 + i * 10}px; height: ${
+    const element = `<div style="width: ${30 + i * 10}px; height: ${
       30 + i * 10
     }px ; background-color: ${getRandomHexColor()}"></div>`;
-    array.push(newEL);
+    array.push(element);
   }
 
   const stringArray = array.join("");
